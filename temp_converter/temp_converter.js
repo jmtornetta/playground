@@ -1,4 +1,4 @@
-var TempNumber = getElementById('TempNumber').value;
+var TempNumber = getElementById().value;
 /* Later, try adding an event listener through javascript instead of using an onsubmit attribute in the html
 var ele = getElementById('TempForm');
 if(ele.addEventListener){ //Listens for form submit for form with ID TempForm.
@@ -7,7 +7,7 @@ if(ele.addEventListener){ //Listens for form submit for form with ID TempForm.
     ele.attachEvent('onsubmit', display_convertTemp);            //Old IE
 };
 */
-function convertTemp(TempNumber){
+function convertTemp(){
    var k = getElementById('KelvinTempUnit').checked;
    var c = getElementById('CelsiusTempUnit').checked;
    var f = getElementById('FahrenheightTempUnit').checked;
